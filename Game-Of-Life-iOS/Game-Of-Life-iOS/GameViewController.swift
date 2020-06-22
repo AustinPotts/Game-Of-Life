@@ -8,12 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GameViewController: UIViewController {
+    
+    //MARK: - Outlets
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
 
 
 }
