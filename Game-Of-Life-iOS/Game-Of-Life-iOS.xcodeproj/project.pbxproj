@@ -7,25 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4542667A24A3A46F00A6BA5E /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4542667924A3A46F00A6BA5E /* Cell.swift */; };
 		4547DD8324A111F100DEBBF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547DD8224A111F100DEBBF8 /* AppDelegate.swift */; };
 		4547DD8524A111F100DEBBF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547DD8424A111F100DEBBF8 /* SceneDelegate.swift */; };
 		4547DD8724A111F100DEBBF8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547DD8624A111F100DEBBF8 /* GameViewController.swift */; };
-		4547DD8A24A111F100DEBBF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4547DD8824A111F100DEBBF8 /* Main.storyboard */; };
 		4547DD8C24A111F500DEBBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4547DD8B24A111F500DEBBF8 /* Assets.xcassets */; };
 		4547DD8F24A111F500DEBBF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4547DD8D24A111F500DEBBF8 /* LaunchScreen.storyboard */; };
-		4547DD9724A13D1300DEBBF8 /* GameGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547DD9624A13D1300DEBBF8 /* GameGridViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4542667924A3A46F00A6BA5E /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		4547DD7F24A111F100DEBBF8 /* Game-Of-Life-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game-Of-Life-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4547DD8224A111F100DEBBF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4547DD8424A111F100DEBBF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4547DD8624A111F100DEBBF8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		4547DD8924A111F100DEBBF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4547DD8B24A111F500DEBBF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4547DD8E24A111F500DEBBF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4547DD9024A111F500DEBBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4547DD9624A13D1300DEBBF8 /* GameGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameGridViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +37,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4542667824A3A45900A6BA5E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4542667924A3A46F00A6BA5E /* Cell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4547DD7624A111F000DEBBF8 = {
 			isa = PBXGroup;
 			children = (
+				4542667824A3A45900A6BA5E /* Models */,
 				4547DD8124A111F100DEBBF8 /* Game-Of-Life-iOS */,
 				4547DD8024A111F100DEBBF8 /* Products */,
 			);
@@ -61,11 +68,9 @@
 				4547DD8224A111F100DEBBF8 /* AppDelegate.swift */,
 				4547DD8424A111F100DEBBF8 /* SceneDelegate.swift */,
 				4547DD8624A111F100DEBBF8 /* GameViewController.swift */,
-				4547DD8824A111F100DEBBF8 /* Main.storyboard */,
 				4547DD8B24A111F500DEBBF8 /* Assets.xcassets */,
 				4547DD8D24A111F500DEBBF8 /* LaunchScreen.storyboard */,
 				4547DD9024A111F500DEBBF8 /* Info.plist */,
-				4547DD9624A13D1300DEBBF8 /* GameGridViewController.swift */,
 			);
 			path = "Game-Of-Life-iOS";
 			sourceTree = "<group>";
@@ -130,7 +135,6 @@
 			files = (
 				4547DD8F24A111F500DEBBF8 /* LaunchScreen.storyboard in Resources */,
 				4547DD8C24A111F500DEBBF8 /* Assets.xcassets in Resources */,
-				4547DD8A24A111F100DEBBF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +147,7 @@
 			files = (
 				4547DD8724A111F100DEBBF8 /* GameViewController.swift in Sources */,
 				4547DD8324A111F100DEBBF8 /* AppDelegate.swift in Sources */,
-				4547DD9724A13D1300DEBBF8 /* GameGridViewController.swift in Sources */,
+				4542667A24A3A46F00A6BA5E /* Cell.swift in Sources */,
 				4547DD8524A111F100DEBBF8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4547DD8824A111F100DEBBF8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4547DD8924A111F100DEBBF8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4547DD8D24A111F500DEBBF8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
