@@ -195,6 +195,8 @@ class GameViewController: UIViewController {
         setupUI()
         // Set Up Nav Con
         setupNavController()
+        NotificationCenter.default.addObserver(self, selector: #selector(updateGeneration), name: .generationChanged, object: nil)
+
         
     }
     
@@ -343,4 +345,6 @@ class GameViewController: UIViewController {
        }
    }
 
-
+extension Notification.Name {
+    static let generationChanged = Notification.Name("generationChangedNotification")
+}
