@@ -109,6 +109,47 @@ class Life {
         }
     }
     
+    
+    // Create Explosion 
+    func createExplosion(){
+        generation = 0
+        cells = []
+        let center = ((size / 6) / 2) - 2
+        for x in 0 ..< (size / 6) {
+            for y in 0 ..< (size / 6){
+                switch (x, y) {
+                case (center, center):
+                    let centerCell = Cell(x: center, y: center, state: .alive)
+                    cells.append(centerCell)
+                case (center + 1, center):
+                    let leftCell = Cell(x: center + 1, y: center, state: .alive)
+                    cells.append(leftCell)
+                case (center + 2, center):
+                    let rightCell = Cell(x: center + 2, y: center, state: .alive)
+                    cells.append(rightCell)
+                case (center + 3, center):
+                    let rightCell = Cell(x: center + 3, y: center, state: .alive)
+                    cells.append(rightCell)
+                case (center + 4, center):
+                    let rightCell = Cell(x: center + 4, y: center, state: .alive)
+                    cells.append(rightCell)
+                case (center + 5, center):
+                    let rightCell = Cell(x: center + 5, y: center, state: .alive)
+                    cells.append(rightCell)
+                case (center + 6, center):
+                    let rightCell = Cell(x: center + 6, y: center, state: .alive)
+                    cells.append(rightCell)
+                    
+                    
+                    
+                default:
+                    let cell = Cell(x: x, y: y, state: .dead)
+                    cells.append(cell)
+                }
+            }
+        }
+    }
+    
   
     
     //Create Glider
