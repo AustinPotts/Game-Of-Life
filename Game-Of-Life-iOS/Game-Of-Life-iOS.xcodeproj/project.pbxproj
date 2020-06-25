@@ -50,18 +50,35 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		454266B124A51C8600A6BA5E /* New Group */ = {
+		454266B124A51C8600A6BA5E /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				454266B224A51C9F00A6BA5E /* GameBoardView.swift */,
 			);
-			path = "New Group";
+			path = Views;
+			sourceTree = "<group>";
+		};
+		454266B424A520C800A6BA5E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		454266B524A520F800A6BA5E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4547DD8624A111F100DEBBF8 /* GameViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		4547DD7624A111F000DEBBF8 = {
 			isa = PBXGroup;
 			children = (
-				454266B124A51C8600A6BA5E /* New Group */,
+				454266B524A520F800A6BA5E /* View Controllers */,
+				454266B424A520C800A6BA5E /* Helpers */,
+				454266B124A51C8600A6BA5E /* Views */,
 				4542667824A3A45900A6BA5E /* Models */,
 				4547DD8124A111F100DEBBF8 /* Game-Of-Life-iOS */,
 				4547DD8024A111F100DEBBF8 /* Products */,
@@ -81,7 +98,6 @@
 			children = (
 				4547DD8224A111F100DEBBF8 /* AppDelegate.swift */,
 				4547DD8424A111F100DEBBF8 /* SceneDelegate.swift */,
-				4547DD8624A111F100DEBBF8 /* GameViewController.swift */,
 				4547DD8B24A111F500DEBBF8 /* Assets.xcassets */,
 				4547DD8D24A111F500DEBBF8 /* LaunchScreen.storyboard */,
 				4547DD9024A111F500DEBBF8 /* Info.plist */,
