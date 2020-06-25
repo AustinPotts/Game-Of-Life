@@ -8,11 +8,14 @@
 
 import Foundation
 
+// Current state the Cell is in
 enum State {
     case alive, dead
 }
 
+// Need a Hashable Cell in order to get integer hash value
 struct Cell: Hashable {
+    // The Cell will contain an X position, Y position & Current State(alive or dead)
     let x: Int
     let y: Int
     var state: State
@@ -23,12 +26,16 @@ struct Cell: Hashable {
         self.state = state
     }
     
+    // Generating own hash
+    // Hasher struct uses a random seed to generate its hash values, which means that a given object’s hash value will change between runs of your program.
+    // On average, the time complexity of the search function with the use of hashing is O(1)
     func hash(into hasher: inout Hasher) {
         let hash = x + y * 1_0000
         hasher.combine(hash)
     }
     
-    func isNeighbor(to cell: Cell) -> Bool {
+    // Find out if the Cell has a neighbor
+    func isCellNeighbor(to cell: Cell) -> Bool {
         let xDiff = abs(self.x - cell.x)
         let yDiff = abs(self.y - cell.y)
         
@@ -40,6 +47,7 @@ struct Cell: Hashable {
         }
     }
     
+    // Toggle the state of the Cell (Alive, Dead)
     mutating func toggle() {
         switch state {
         case .alive:
