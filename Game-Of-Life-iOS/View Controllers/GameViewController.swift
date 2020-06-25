@@ -194,6 +194,7 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         // Set Up Nav Con
+        setupNavController()
         
     }
     
@@ -254,11 +255,22 @@ class GameViewController: UIViewController {
     }
     
     // Set Up Nav Controller
+    private func setupNavController() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            image: UIImage(systemName: "info.circle"),
+            style: .plain,
+            target: self,
+            action: #selector(presentAboutScreen)
+        )
+        navigationItem.rightBarButtonItem?.tintColor = .white
+    }
+
     
     
     
     
-    //MARK: Obj C Functions for Selectors 
+    //MARK: Obj C Functions for Selectors
     @objc private func stepGame() {
         if gameBoardView.life.cells == [] {
             gameBoardView.life.createRandom()
@@ -311,6 +323,9 @@ class GameViewController: UIViewController {
     }
     
     // Set Up Presentation of About Screen
+    @objc private func presentAboutScreen() {
+              //FIXME
+          }
     
     
     @objc private func updateGeneration() {
@@ -319,5 +334,13 @@ class GameViewController: UIViewController {
 }
 
    
+@available(iOS 13, *)
+   struct AboutGamePreview: PreviewProvider {
+       static var previews: some View {
+           GameViewController().asPreview()
+               .edgesIgnoringSafeArea(.all)
+               .colorScheme(.dark)
+       }
+   }
 
 
