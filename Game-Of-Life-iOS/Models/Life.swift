@@ -13,7 +13,12 @@ class Life {
     // MARK: - Properties
     var cells = [Cell]()
     let size: Int
-    var generation = 0
+    var generation = 0 {
+        didSet {
+            NotificationCenter.default.post(name: .generationChanged, object: self, userInfo: nil)
+        }
+    }
+
     
     
     // MARK: - Computed Properties
