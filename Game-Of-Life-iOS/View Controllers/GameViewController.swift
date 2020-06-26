@@ -327,6 +327,8 @@ class GameViewController: UIViewController {
     // Set Up Presentation of About Screen
     @objc private func presentAboutScreen() {
               //FIXME
+             let aboutGameVC = AboutDetailsViewController(nibName: nil, bundle: nil)
+             navigationController?.pushViewController(aboutGameVC, animated: true)
           }
     
     

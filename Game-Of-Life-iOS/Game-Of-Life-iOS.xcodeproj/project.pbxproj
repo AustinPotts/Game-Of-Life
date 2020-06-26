@@ -11,6 +11,7 @@
 		454266B024A4FC6500A6BA5E /* Life.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454266AF24A4FC6500A6BA5E /* Life.swift */; };
 		454266B324A51C9F00A6BA5E /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454266B224A51C9F00A6BA5E /* GameBoardView.swift */; };
 		454266B724A5462F00A6BA5E /* PreviewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454266B624A5462F00A6BA5E /* PreviewExtension.swift */; };
+		454266BB24A582A900A6BA5E /* AboutDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454266BA24A582A900A6BA5E /* AboutDetailsViewController.swift */; };
 		4547DD8324A111F100DEBBF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547DD8224A111F100DEBBF8 /* AppDelegate.swift */; };
 		4547DD8524A111F100DEBBF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547DD8424A111F100DEBBF8 /* SceneDelegate.swift */; };
 		4547DD8724A111F100DEBBF8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547DD8624A111F100DEBBF8 /* GameViewController.swift */; };
@@ -23,6 +24,7 @@
 		454266AF24A4FC6500A6BA5E /* Life.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Life.swift; sourceTree = "<group>"; };
 		454266B224A51C9F00A6BA5E /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
 		454266B624A5462F00A6BA5E /* PreviewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewExtension.swift; sourceTree = "<group>"; };
+		454266BA24A582A900A6BA5E /* AboutDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDetailsViewController.swift; sourceTree = "<group>"; };
 		4547DD7F24A111F100DEBBF8 /* Game-Of-Life-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game-Of-Life-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4547DD8224A111F100DEBBF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4547DD8424A111F100DEBBF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				4547DD8624A111F100DEBBF8 /* GameViewController.swift */,
+				454266BA24A582A900A6BA5E /* AboutDetailsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				4542667A24A3A46F00A6BA5E /* Cell.swift in Sources */,
 				4547DD8524A111F100DEBBF8 /* SceneDelegate.swift in Sources */,
 				454266B024A4FC6500A6BA5E /* Life.swift in Sources */,
+				454266BB24A582A900A6BA5E /* AboutDetailsViewController.swift in Sources */,
 				454266B324A51C9F00A6BA5E /* GameBoardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
